@@ -18,9 +18,9 @@ TOPDIR = .
 # NOTE: The STM32L1 stdperiph package lacks the syscalls.c file that the
 # STM32F0 package has.
 SOURCES = \
-	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Templates/main.c \
-	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Templates/stm32l1xx_it.c \
-	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Templates/system_stm32l1xx.c \
+	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Examples/DAC/DAC_SignalsGeneration/main.c \
+	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Examples/DAC/DAC_SignalsGeneration/stm32l1xx_it.c \
+	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Examples/DAC/DAC_SignalsGeneration/system_stm32l1xx.c \
 	  $(TOPDIR)/Libraries/CMSIS/Device/ST/STM32L1xx/Source/Templates/TrueSTUDIO/startup_stm32l1xx_md.s \
 	  $(wildcard $(TOPDIR)/Libraries/STM32L1xx_StdPeriph_Driver/src/*.c) \
 	  $(TOPDIR)/Utilities/STM32_EVAL/STM32L152_EVAL/stm32l152_eval.c \
@@ -29,9 +29,8 @@ SOURCES = \
 	  $(TOPDIR)/baselibc_stdio.c \
 
 HEADERS = \
-	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Templates/main.h \
-	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Templates/stm32l1xx_conf.h \
-	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Templates/stm32l1xx_it.h \
+	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Examples/DAC/DAC_SignalsGeneration/stm32l1xx_conf.h \
+	  $(TOPDIR)/Project/STM32L1xx_StdPeriph_Examples/DAC/DAC_SignalsGeneration/stm32l1xx_it.h \
 	  $(TOPDIR)/Utilities/STM32_EVAL/STM32L152_EVAL/stm32l152_eval.h \
 	  $(wildcard $(TOPDIR)/Libraries/CMSIS/Include/*.h) \
 	  $(wildcard $(TOPDIR)/Libraries/CMSIS/Device/ST/STM32L1xx/Include/*.h) \
