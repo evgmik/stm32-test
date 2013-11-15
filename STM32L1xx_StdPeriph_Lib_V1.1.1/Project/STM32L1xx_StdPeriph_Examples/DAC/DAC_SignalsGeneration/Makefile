@@ -99,6 +99,6 @@ clean:
 	rm -f $(RESULT).map
 	rm -f $(RESULT).hex
 	rm -f $(RESULT).lst
-	$(MAKE) -C Baselibc clean
+	$(MAKE) -C $(TOPDIR)/Baselibc clean
 
 .PHONY: all build size clean install
